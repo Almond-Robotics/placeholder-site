@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/png" href="images/almond1.png">
+
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,400i,600,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/sal.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Almond Robotics</title>
+</head>
+
+<body>
+   
+       
+    <a href="https://www.firstinspires.org/robotics/ftc" target="_blank">
+        <img style="position: absolute; top: 10px; left: 10px; border: 0; width: 100px; z-index: 999"
+            src="images/first.png" alt="First Logo" data-sal="slide-right" data-sal-duration="800" />
+    </a>
+    <div class="header" data-sal="slide-down" data-sal-duration="800">
+        <div class="header--content">
+            <h4>Almond Robotics - FTC Team #12518</h4>
+            <h1 class="header--text">A team of <span id="typed" class="typed">makers</span></h1>
+            <span style="font-size:3em; ">
+            <a style="border: none;"href="https://twitter.com/almondrobotics?lang=en"><i class="fab fa-twitter"></i></a>
+            <a style="border: none;" href="https://www.instagram.com/almondrobotics/"><i class="fab fa-instagram"></i></a>
+            <a  style="border: none;"href="https://www.facebook.com/almondrobotics12518/?ref=br_rs"><i class="fab fa-facebook-f"></i></a>
+            <a style="border: none;" href="https://www.youtube.com/channel/UCXNJLcXwcP2FkgMGLtoRIbA"><i class="fab fa-youtube"></i></a>
+        </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="content">
+        <div class="about">
+
+            <div class="about--section">
+                <div class="about--text">
+                    <h2 data-sal="slide-right" data-sal-duration="800">Who are we?</h2>
+                    <hr data-sal="slide-right" data-sal-duration="800">
+
+                    <p data-sal="slide-up" data-sal-duration="800">We are a 3rd-year FTC team of five, and love science and engineering. Going nuts for innovation is our motto; it represents the principle that we base all of our efforts on. Almonds symbolize our team spirit in both fun and serious ways. During our meetings, we strive to show our team spirit and collaborative mindsets. We strive to embody the core values of FIRST in everything that we do.  
+                </div>
+                <div data-sal="slide-left" data-sal-duration="800">
+                    <img src="images/team.JPG" alt="Network across the world."
+                        class="illustration about--image">
+                </div>
+            </div>
+
+            <div class="about--section">
+                <div>
+                    <img src="images/kid_kit.JPG" alt="Network across the world." class="illustration about--image"
+                                        data-sal="slide-right" data-sal-duration="800">
+                </div>
+                <div class="about--text">
+                    <h2 data-sal="slide-left" data-sal-duration="800">How do we connect with the community?</h2>
+                    <hr data-sal="slide-left" data-sal-duration="800">
+
+                    <p data-sal="slide-up" data-sal-duration="800">Almond Robotics is committed to inspiring passion for STEM through educating our community. Our team members participate in many other STEM activities in our community, and have lead their own events to allow for more students to become interested in STEM.
+                        We are committed to interacting with FTC teams, by both learning from other veteran teams and sharing our knowledge and experiences with our peers.
+                        Two of our team members have been a part of an FLL team for many years, and have decided to leverage their experience by coaching an FLL team, which consists of students in 5th to 7th grade from our community. We also teach a weekly EV3 robotics class. This year, we have also formed an FLL Jr. team, which is coached by former FLL members.
+                    </p>
+                </div>
+            </div>
+
+            <div class="about--section">
+                <div class="about--text">
+                    <h2 data-sal="slide-right" data-sal-duration="800">How are we managed?</h2>
+                    <hr data-sal="slide-right" data-sal-duration="800">
+
+                    <p data-sal="slide-up" data-sal-duration="800">Almond Robotics’ budget is managed through the Modular Learning, LLC, a 501(c)(3) non-profit organization incorporated on September 1, 2017, which is managed by the coach and mentors. We are a self-funded team and most of our budget has been put towards buying new parts and competition expenses. However, we have also received several grants to lower our expenses.</p>
+                </div>
+                <div>
+                    <img src="images/team_winning.JPG" alt="Network across the world." class="illustration about--image"
+                            data-sal="slide-left" data-sal-duration="800">
+                </div>
+            </div>
+            <div class="footer"/>
+
+          
+    
+
+    <!-- ----------
+        Scripts 
+    ---------- -->
+    <script src="https://kit.fontawesome.com/0e55274942.js" crossorigin="anonymous"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/typed.js"></script>
+    <script src="js/sal.js"></script>
+    <!-- typed.js -->
+    <script>
+        function newTyped() {}
+        $(function () {
+            $("#typed").typed({
+                // Change to edit text
+                strings: ["innovators.", "problem solvers.", "almond-lovers.", "engineers.", "programmers.",
+                    "designers.", "thinkers.", "dreamers."
+                ],
+                typeSpeed: 70,
+                backDelay: 900,
+                contentType: "html",
+                loop: true,
+                // loop: !0,
+                shuffle: true,
+                // shuffle: !0,
+                resetCallback: function () {
+                    newTyped()
+                }
+            }), $(".reset").click(function () {
+                $("#typed").typed("reset")
+            })
+        });
+    </script>
+    <!-- sal.js -->
+    <script>
+        sal({
+            threshold: 0.1,
+            once: true,
+        });
+    </script>
+
+    <script> //date of next meeting
+    const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+    var d = new Date();
+    d.setDate(d.getDate() + ((7-d.getDay())%7+4) % 7); //gets the date of the next thursday
+    document.getElementById("month").innerText=months[d.getMonth()];  //sets in html
+    document.getElementById("day").innerHTML=d.getDate();
+    </script>
+    
+</body>
+
+</html>
