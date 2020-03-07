@@ -1,5 +1,5 @@
-# Westbrough High School Hack Club
+# Almond Robotics FTC Team #12518
 
-The site for Westborough High School's Hack Club.
+The site for Almond Robotics.
 
-https://whs.hackclub.com
+https://almondrobotics.netlify.app
