@@ -2,4 +2,4 @@
 
 The site for Almond Robotics.
 
-https://almondrobotics.netlify.com
+https://almondrobotics.com
